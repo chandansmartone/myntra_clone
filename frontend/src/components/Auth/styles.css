@@ -1,0 +1,258 @@
+.auth-page {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--grey_bg);
+  position: fixed;
+  top: 0%;
+  left: 0;
+}
+
+.shipping-page {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shipping-box {
+  background-color: white;
+  width: 25vw;
+  height: 90vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.auth-box {
+  position: relative;
+  background-color: var(--white);
+  width: 25vw;
+  height: 70vh;
+  overflow: hidden;
+}
+
+.forgot-password-box {
+  background-color: var(--white);
+  width: 25vw;
+  height: 45vh;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.auth-box-title {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.664);
+  font-weight: 400;
+  font-size: 1.05rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--accent);
+  width: 50%;
+  margin: auto;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 1.5rem;
+  justify-content: space-evenly;
+  height: 70%;
+  transition: all 0.5s;
+}
+
+.auth-form.shipping {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax;
+  justify-content: space-evenly;
+  height: 80%;
+  transition: all 0.5s;
+}
+
+.auth-form > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.auth-form > div > input,
+.auth-form > div > select {
+  padding: 0.8rem 2.5rem;
+  padding-right: 0.7rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  font: 300 0.8rem cursive;
+  outline: none;
+}
+
+.auth-form > div > svg {
+  position: absolute;
+  transform: translateX(0.7rem);
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.auth-form > a {
+  color: rgba(0, 0, 0, 0.651);
+  text-decoration: none;
+  align-self: flex-end;
+  transition: all 0.5s;
+  font-size: 0.65rem;
+  font-weight: 500;
+}
+
+.auth-form > a:hover {
+  color: var(--black);
+}
+
+.auth-btn {
+  border: none;
+  background-color: var(--accent);
+  color: var(--white);
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  /* text-transform: uppercase; */
+  width: 100%;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+.auth-btn:hover,
+.logout-btn:hover {
+  background-color: var(--accent_hover);
+}
+
+.logout-btn {
+  position: absolute;
+  bottom: .8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  background-color: var(--accent);
+  color: var(--white);
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  width: 50%;
+  padding: 0.8rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+.auth-redirect {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--greyLight);
+}
+
+.auth-redirect > a {
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+  .auth-page {
+    margin-top: 0;
+  }
+
+  .auth-box {
+    width: 45vw;
+  }
+
+  .shipping-box {
+    width: 45vw;
+  }
+
+  .forgot-password-box {
+    width: 40vw;
+  }
+
+  .auth-box-title {
+    padding: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .auth-page {
+    margin-top: 3.5vh;
+    background-color: var(--white);
+    min-height: -webkit-fill-available;
+  }
+
+  .auth-box {
+    width: 100vw;
+    height: 80vh;
+  }
+  .shipping-box {
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .forgot-password-box {
+    width: 100vw;
+    height: 55vh;
+  }
+
+  .auth-box-title {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .auth-form {
+    padding: 2.7rem;
+  }
+
+  .auth-form.shipping {
+    padding: 2.7rem;
+  }
+
+  .auth-form > div > input {
+    font-family: "lato";
+    font-size: 1rem;
+    padding: 1.2rem 2.8rem;
+  }
+
+  .auth-form > div > svg {
+    font-size: 1.5rem;
+  }
+
+  .auth-form > a {
+    font-size: 0.9rem;
+  }
+
+  .auth-btn {
+    padding: 1.2rem;
+  }
+
+  .auth-redirect {
+    font-size: 0.9rem;
+  }
+
+  .auth-redirect > a {
+    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}

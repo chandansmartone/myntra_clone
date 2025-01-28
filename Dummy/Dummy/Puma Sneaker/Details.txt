@@ -1,0 +1,8 @@
+name: Puma Men White & Black Colourblocked IDP Sneakers
+additionalInfo: Men White & Black Colourblocked IDP Sneakers
+brand: Puma
+mrp: 4499
+price: 3374
+category: casual shoes
+gender: Men
+sizes: 6,7,8,9,10,11

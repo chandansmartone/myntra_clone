@@ -1,0 +1,35 @@
+{
+  "name": "perfectfit-api",
+  "version": "1.0.0",
+  "description": "PerfectFit is Online Shopping Site for Fashion & Lifestyle in India.",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "perfectfit",
+    "e-commerce",
+    "ecommerce",
+    "shopping",
+    "fashion store",
+    "express",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "ChandanKumar M",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.30.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mailtrap": "^3.0.0",
+    "mongoose": "^6.4.1",
+    "nodemon": "^2.0.22",
+    "razorpay": "^2.8.2"
+  }
+}

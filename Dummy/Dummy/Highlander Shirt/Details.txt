@@ -1,0 +1,8 @@
+name: HIGHLANDER Men Rust Slim Fit Opaque Casual Shirt
+additionalInfo: Men Rust Slim Fit Opaque Casual Shirt
+brand: Highlander
+mrp: 1199
+price: 599
+category: Shirts
+gender: Men
+sizes: 39,40,42,44
